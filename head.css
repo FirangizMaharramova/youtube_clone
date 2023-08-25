@@ -1,0 +1,103 @@
+.head {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.left-side {
+  height: 90vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden ;
+
+}
+
+.box {
+  min-width: 90%;
+  min-height: 200px;
+  margin: 10px 0;
+}
+.home-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  padding: 10px 0;
+}
+.home-box div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0f0f0f;
+  cursor: pointer;
+  font-family: "Roboto", "Noto", sans-serif;
+}
+.home-box div:hover {
+  background: #f2f2f2;
+}
+
+.short {
+  width: 13%;
+}
+.copyright-box {
+  width: 100%;
+  min-height: 240px;
+}
+.copyright-box p {
+  padding: 16px 24px;
+  color: #545454;
+  font-weight: 600;
+}
+.copyright-box span {
+  padding: 16px 24px;
+  color: #909090;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.right-side {
+  width: 1240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.buttons {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: none;
+}
+.button {
+  padding: 4px 12px;
+  border-radius: 3px;
+  border: transparent;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #ccc;
+}
+.button:focus{
+  background-color: black;
+  color: white;
+}
+@media only screen and (max-width:1000px){
+  .left-side {
+    display: none;
+  }
+
+}

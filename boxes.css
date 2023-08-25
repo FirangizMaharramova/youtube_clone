@@ -1,0 +1,25 @@
+.right-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 7px 35px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.rightbox {
+  width: 370px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.boximg {
+  width: 350px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.boximg:hover {
+  border-radius: 0;
+  transition: 0.5s;
+}
